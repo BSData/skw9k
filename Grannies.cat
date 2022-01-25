@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f702-88f3-aa96-b128" name="Grannies" revision="1" battleScribeVersion="2.03" authorName="Rylok" authorContact="@rylok3" library="false" gameSystemId="bc3d-3e2a-b2b3-fef7" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f702-88f3-aa96-b128" name="Grannies" revision="1" battleScribeVersion="2.03" authorName="Rylok" authorContact="@rylok3" library="false" gameSystemId="bc3d-3e2a-b2b3-fef7" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="3284-fc7c-1d66-fe31" name="Grannybook 2021"/>
   </publications>
@@ -35,6 +35,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="84cb-ac6f-85b1-ef30" name="Turbo Boost" hidden="false" targetId="536a-04b6-ca02-d522" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="17f7-dbc0-bb59-08f1" name="Attack" hidden="false" targetId="c735-947c-993c-e57d" primary="false"/>
         <categoryLink id="2b23-43f9-fa6a-de37" name="Lead Car" hidden="false" targetId="1f30-56d0-ac83-1212" primary="true"/>
@@ -80,10 +83,37 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="b797-d41b-3c3e-5ad1" name="Turbo Boost" hidden="false" targetId="536a-04b6-ca02-d522" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="129d-6a61-1694-750d" name="Support" hidden="false" targetId="2c8f-63d4-2b0c-01ad" primary="true"/>
         <categoryLink id="3684-b96a-92bf-f122" name="Attack" hidden="false" targetId="c735-947c-993c-e57d" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a564-f674-3227-15de" name="Driver" publicationId="2ea4-57c2-c067-7215" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7277-2c42-6f2c-02ff" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be11-6aa4-de7b-928c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5922-6212-1064-0f59" name="Great Grandmother Eloise" publicationId="3284-fc7c-1d66-fe31" hidden="false" collective="false" import="true" targetId="76f0-5a6c-4078-7688" type="selectionEntry"/>
+            <entryLink id="a02e-9101-c911-6559" name="Mee-Maw" hidden="false" collective="false" import="true" targetId="8f0b-f738-a954-3b96" type="selectionEntry"/>
+            <entryLink id="9c33-292c-e8af-336f" name="Granny Trooper" hidden="false" collective="false" import="true" targetId="4191-729e-affc-9637" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c7d8-d8c4-1f22-2592" name="Navigator" publicationId="2ea4-57c2-c067-7215" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2e-bc63-a21c-4e94" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a1-11ad-e6a5-5553" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5e4e-df43-28ac-89d6" name="Great Grandmother Eloise" publicationId="3284-fc7c-1d66-fe31" hidden="false" collective="false" import="true" targetId="76f0-5a6c-4078-7688" type="selectionEntry"/>
+            <entryLink id="e520-56f7-3cb4-fea7" name="Mee-Maw" hidden="false" collective="false" import="true" targetId="8f0b-f738-a954-3b96" type="selectionEntry"/>
+            <entryLink id="d049-8a01-c67c-7df1" name="Granny Trooper" hidden="false" collective="false" import="true" targetId="4191-729e-affc-9637" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
@@ -160,6 +190,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="f950-bc41-043b-d9b5" name="Shriek" hidden="false" targetId="c092-75d7-d592-9cde" type="profile"/>
+      </infoLinks>
       <entryLinks>
         <entryLink id="3f78-4e51-f93b-b783" name="Weppon" hidden="false" collective="false" import="true" targetId="ee2f-5b09-868f-0957" type="selectionEntryGroup"/>
       </entryLinks>
@@ -183,8 +216,11 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="cae8-f58b-4c48-f896" name="Shriek" hidden="false" targetId="c092-75d7-d592-9cde" type="profile"/>
+      </infoLinks>
       <entryLinks>
-        <entryLink id="ee41-e259-8446-40e7" name="Weppon" hidden="false" collective="false" import="true" targetId="ee2f-5b09-868f-0957" type="selectionEntryGroup"/>
+        <entryLink id="ee41-e259-8446-40e7" name="Weapon" hidden="false" collective="false" import="true" targetId="ee2f-5b09-868f-0957" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
@@ -216,6 +252,7 @@
       </infoLinks>
       <costs>
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="2.0"/>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5dfb-930b-3711-e2f0" name="Walker" publicationId="3284-fc7c-1d66-fe31" hidden="false" collective="false" import="true" type="upgrade">
@@ -224,6 +261,7 @@
       </infoLinks>
       <costs>
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="4.0"/>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

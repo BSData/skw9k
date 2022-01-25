@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bc3d-3e2a-b2b3-fef7" name="Spec Kata Wars 9000" revision="1" battleScribeVersion="2.03" authorName="Rylok" authorContact="@rylok3" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bc3d-3e2a-b2b3-fef7" name="Spec Kata Wars 9000" revision="2" battleScribeVersion="2.03" authorName="Rylok" authorContact="@rylok3" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="2ea4-57c2-c067-7215" name="Spec Kata Wars 9000 Core Rulebook" shortName="corebook" publisher="Rylok Enterprises, Inc, Esq, Ltd." publicationDate="2021" publisherUrl=""/>
   </publications>
@@ -143,6 +143,21 @@
         <characteristic name="Attack Speed" typeId="b3d9-5892-fc1d-cd47">5</characteristic>
         <characteristic name="Parry" typeId="9972-d522-3bdb-4501">4</characteristic>
         <characteristic name="Range" typeId="b352-1258-db4f-2de1">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c092-75d7-d592-9cde" name="Shriek" publicationId="2ea4-57c2-c067-7215" page="1" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">A character on this vehicle can shriek loudly, and when they do so, it hurts your ears.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1917-10ff-b05e-cf43" name="Spit" publicationId="2ea4-57c2-c067-7215" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">A character on this vehicle can spit a long distance. Gross.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="536a-04b6-ca02-d522" name="Turbo Boost" publicationId="2ea4-57c2-c067-7215" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">This vehicle can turn on it&apos;s turboboost ability. If it does so, it can move 3&quot; in a random direction. Wheeeeeeee!</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
