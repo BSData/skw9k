@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="9c5a-8fa3-19b7-f4ed" name="Bartertown" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="bc3d-3e2a-b2b3-fef7" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="5212-e598-025c-206d" name="Aunty Entity" hidden="false" collective="false" import="true" targetId="57ab-17bc-19a3-9913" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="329b-21b5-ea4e-6ec2" name="New CategoryLink" hidden="false" targetId="a064-2c7d-0315-84c9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3c84-97b3-3b32-5421" name="MasterBlaster" hidden="false" collective="false" import="true" targetId="b1dd-7dfc-234c-e714" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="adbd-8b75-cb23-89af" name="New CategoryLink" hidden="false" targetId="a064-2c7d-0315-84c9" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2c04-59a3-8d16-c7c7" name="Camel Wagon" hidden="false" collective="false" import="true" targetId="b162-df82-1c5a-1a87" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b6c0-ce9f-d3c4-82db" name="Lead Vehicles" hidden="false" targetId="1f30-56d0-ac83-1212" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e4f4-7837-90a1-6f3d" name="Bartertown Goons" hidden="false" collective="false" import="true" targetId="9fce-eba9-117d-fa8c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="73a0-6234-4ab5-157d" name="New CategoryLink" hidden="false" targetId="a970-5bec-00e0-9f36" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="24cf-5fcd-239a-ba35" name="Bartertown Codex" publicationId="2ea4-57c2-c067-7215" page="56" hidden="false">
+      <description>If a BARTERTOWN unit fells their Hold Firm Test, it is sent to Gulag.Remove the model from the game. No more than 32 models can be exiled this way during a single game.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="8b18-ad38-7a22-287b" name="Master" publicationId="2ea4-57c2-c067-7215" page="44" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="002e-a887-8423-3ff1" name="Master" hidden="false" targetId="c105-0fcb-fc9c-d143" type="profile"/>
+        <infoLink id="931f-9582-a8e8-adeb" name="Ruler of Bartertown" hidden="false" targetId="5712-099c-411f-3758" type="profile"/>
+        <infoLink id="4320-0d5b-682e-6390" name="Juggernaut" hidden="false" targetId="4cd8-539c-0efc-41f2" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a5b-afad-c2f3-ab06" name="Blaster" publicationId="2ea4-57c2-c067-7215" page="45" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d5fb-00f7-53fb-d87c" name="Blaster" publicationId="2ea4-57c2-c067-7215" page="34" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <characteristics>
+            <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">25</characteristic>
+            <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">3</characteristic>
+            <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">3</characteristic>
+            <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ee7e-7e3b-1793-041f" name="Smashing Fists" hidden="false" targetId="6697-823d-b15f-8d02" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1dd-7dfc-234c-e714" name="MasterBlaster" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="eafa-6225-3159-b618" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="57ab-17bc-19a3-9913" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eafa-6225-3159-b618" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3b32-4849-a1d2-8927" name="Tag Team" publicationId="2ea4-57c2-c067-7215" page="37" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">Master and Blaster may never be separated by more than 0,5&quot; when on the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b407-22aa-c673-eb48" name="The Master Commands" hidden="false" targetId="4463-0936-d14d-c2a9" type="profile"/>
+        <infoLink id="e91d-bcfe-b3c0-2f6d" name="The Blaster Obeys" hidden="false" targetId="4bc4-ea16-6856-18ab" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="1b4a-3109-6d20-ded0" name="Master" hidden="false" collective="false" import="true" targetId="8b18-ad38-7a22-287b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ae9-20df-1d24-9908" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99b9-c2e2-4e76-c8bc" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bdc2-1cdb-96a1-e3ad" name="Blaster" hidden="false" collective="false" import="true" targetId="8a5b-afad-c2f3-ab06" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a85-5ae2-73dd-a187" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e89-3985-506f-aba9" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="12.0"/>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="57ab-17bc-19a3-9913" name="Aunty Entity" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="e8eb-c3d3-7041-9d52" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1dd-7dfc-234c-e714" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8eb-c3d3-7041-9d52" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="73d1-fb9d-848a-23ba" name="Ruler of Bartertown" hidden="false" targetId="5712-099c-411f-3758" type="profile"/>
+        <infoLink id="ad51-767c-047a-9101" name="Aunty Entity" hidden="false" targetId="6492-8380-e9be-3994" type="profile"/>
+        <infoLink id="c12d-06da-c985-c2fd" name="Crossbow Pistol" hidden="false" targetId="64cf-d30a-e5e1-9cde" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="8.0"/>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b162-df82-1c5a-1a87" name="Camel Wagon" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="ba5e-f1cd-3dba-db07" name="Camel Wagon" hidden="false" targetId="f486-c720-c893-4afc" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="10.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c2c-4a8f-ce0f-120a" name="Bartertown Goon" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e5c4-4d1e-1ca9-222c" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74e6-c04d-acb8-34f9" name="Bartertown Goon /w pistol" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b6f9-66b4-ffe6-291f" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile"/>
+        <infoLink id="80f0-f1a9-19fa-2165" name="Pipe Pistol" hidden="false" targetId="8fd2-fa79-6fae-dbf0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8230-a429-8194-9b12" name="Bartertown Goon /w tire iron" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7ad4-c74b-157f-8ddb" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile">
+          <modifiers>
+            <modifier type="increment" field="1744-8129-95a0-536e" value="10"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a278-55a8-f16b-293e" name="Bartertown Goon /w fuel drum" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b53d-a6ec-b9d4-055e" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile">
+          <modifiers>
+            <modifier type="increment" field="1744-8129-95a0-536e" value="10"/>
+            <modifier type="set" field="9aab-d556-7966-cc13" value="0"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9fce-eba9-117d-fa8c" name="Bartertown Goons" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="abbe-7118-b291-6626" name="Goon Selection" hidden="false" collective="false" import="true" targetId="84d9-3700-b319-16c9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="84d9-3700-b319-16c9" name="Goon Selection" hidden="false" collective="false" import="true" defaultSelectionEntryId="26d7-a5c1-47fb-f6f5">
+      <constraints>
+        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec35-cdcc-eab2-2804" type="min"/>
+        <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56fd-1a20-ae62-7580" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="26d7-a5c1-47fb-f6f5" name="Bartertown Goon" hidden="false" collective="false" import="true" targetId="2c2c-4a8f-ce0f-120a" type="selectionEntry"/>
+        <entryLink id="5dc3-635e-b6e2-ae02" name="Bartertown Goon /w fuel drum" hidden="false" collective="false" import="true" targetId="a278-55a8-f16b-293e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee21-958f-961d-47ea" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="36e3-a3c8-0f18-107b" name="Bartertown Goon /w tire iron" hidden="false" collective="false" import="true" targetId="8230-a429-8194-9b12" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d883-fb41-b6f4-b7df" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a278-55a8-f16b-293e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d883-fb41-b6f4-b7df" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ae1a-7211-36ab-d678" name="Bartertown Goon /w pistol" hidden="false" collective="false" import="true" targetId="74e6-c04d-acb8-34f9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0580-3519-63a8-b8ec" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="c105-0fcb-fc9c-d143" name="Master" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+      <characteristics>
+        <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">2</characteristic>
+        <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">2</characteristic>
+        <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">1</characteristic>
+        <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d00a-d049-136a-1b09" name="Blaster" publicationId="2ea4-57c2-c067-7215" page="34" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+      <characteristics>
+        <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">25</characteristic>
+        <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">3</characteristic>
+        <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">3</characteristic>
+        <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4463-0936-d14d-c2a9" name="The Master Commands" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">Everytime Master makes an attack, if Blaster is still on the table, reroll one failed roll per turn. Screech loudly while rerolling.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4bc4-ea16-6856-18ab" name="The Blaster Obeys" publicationId="2ea4-57c2-c067-7215" page="35" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">Eveyrtime the Blaster moves, if the Master is on the battlefield, add 3 Full Throttle tokens.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5712-099c-411f-3758" name="Ruler of Bartertown" publicationId="2ea4-57c2-c067-7215" page="40" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">An order made to a BARTERTOWN model with this ability automatically succeeds.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6492-8380-e9be-3994" name="Aunty Entity" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+      <characteristics>
+        <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">2</characteristic>
+        <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">8</characteristic>
+        <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">8</characteristic>
+        <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="64cf-d30a-e5e1-9cde" name="Crossbow Pistol" hidden="false" typeId="6cfe-fe74-1a3d-6d17" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5fce-07c3-4ac4-725c">Ranged 1</characteristic>
+        <characteristic name="Damage" typeId="e9b6-5ffa-ead8-7da4">3</characteristic>
+        <characteristic name="Attack Speed" typeId="b3d9-5892-fc1d-cd47">1</characteristic>
+        <characteristic name="Parry" typeId="9972-d522-3bdb-4501">6+</characteristic>
+        <characteristic name="Range" typeId="b352-1258-db4f-2de1">14&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6697-823d-b15f-8d02" name="Smashing Fists" hidden="false" typeId="6cfe-fe74-1a3d-6d17" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5fce-07c3-4ac4-725c">Fisticuffs</characteristic>
+        <characteristic name="Damage" typeId="e9b6-5ffa-ead8-7da4">6</characteristic>
+        <characteristic name="Attack Speed" typeId="b3d9-5892-fc1d-cd47">2</characteristic>
+        <characteristic name="Parry" typeId="9972-d522-3bdb-4501">5</characteristic>
+        <characteristic name="Range" typeId="b352-1258-db4f-2de1">2&quot;</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4cd8-539c-0efc-41f2" name="Juggernaut" publicationId="2ea4-57c2-c067-7215" page="36" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">If this model makes an attack move and moves further than 3&quot;, the target model is moved backwards 3&quot; in a straight line from this model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f486-c720-c893-4afc" name="Camel Wagon" hidden="false" typeId="5f4a-2d9d-d324-0d8b" typeName="Vehicle">
+      <characteristics>
+        <characteristic name="Hit Points" typeId="0505-be28-4cc1-c30f">15</characteristic>
+        <characteristic name="Speed" typeId="2a19-89bb-b447-44bf">25</characteristic>
+        <characteristic name="Defense" typeId="db87-a58d-19f7-6a5f">10</characteristic>
+        <characteristic name="Style" typeId="6b85-49c9-f4e2-e51a">really, really cool.</characteristic>
+        <characteristic name="Seats" typeId="ec2d-c0b5-a1fd-3cf4">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b89b-1552-89ae-4734" name="Fuel Drum" hidden="false" typeId="8c47-af7e-49ae-907b" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="c898-4f9c-d2b9-160b">After this model makes an attack, regardless if it is successful or not, remove this model and any other models within 3&quot; from play.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a02d-6c9c-9f9e-ba32" name="Bartertown Goon" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+      <characteristics>
+        <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">3</characteristic>
+        <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">3</characteristic>
+        <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">3</characteristic>
+        <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8fd2-fa79-6fae-dbf0" name="Pipe Pistol" hidden="false" typeId="6cfe-fe74-1a3d-6d17" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5fce-07c3-4ac4-725c">Pistol (rugged)</characteristic>
+        <characteristic name="Damage" typeId="e9b6-5ffa-ead8-7da4">2</characteristic>
+        <characteristic name="Attack Speed" typeId="b3d9-5892-fc1d-cd47">2</characteristic>
+        <characteristic name="Parry" typeId="9972-d522-3bdb-4501">1</characteristic>
+        <characteristic name="Range" typeId="b352-1258-db4f-2de1">20&quot;</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
