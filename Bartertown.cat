@@ -21,6 +21,22 @@
         <categoryLink id="73a0-6234-4ab5-157d" name="New CategoryLink" hidden="false" targetId="a970-5bec-00e0-9f36" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="5d44-3bab-9a08-d845" name="Subboss Dieselgurgler" hidden="false" collective="false" import="true" targetId="8acf-7192-9930-82dc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f9a6-be1e-8b63-1094" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9446-b22f-37bd-0cee" name="Subboss HeWhoPissesFuel" hidden="false" collective="false" import="true" targetId="24be-8aa1-79d2-99e6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9a08-6b66-6b94-c0e9" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="72d7-c3fb-8431-b624" name="Subboss Taserface" hidden="false" collective="false" import="true" targetId="6e20-be3a-b681-71cf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9ce6-502c-3aa4-fb23" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee77-7beb-6821-edb5" name="Mad Max" hidden="false" collective="false" import="true" targetId="771e-c7a9-5686-4554" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="24cf-5fcd-239a-ba35" name="Bartertown Codex" publicationId="2ea4-57c2-c067-7215" page="56" hidden="false">
@@ -58,7 +74,7 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b1dd-7dfc-234c-e714" name="MasterBlaster" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b1dd-7dfc-234c-e714" name="MasterBlaster" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="eafa-6225-3159-b618" value="0.0">
           <conditions>
@@ -99,7 +115,7 @@
         <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="57ab-17bc-19a3-9913" name="Aunty Entity" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="57ab-17bc-19a3-9913" name="Aunty Entity" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="e8eb-c3d3-7041-9d52" value="0.0">
           <conditions>
@@ -129,7 +145,7 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c2c-4a8f-ce0f-120a" name="Bartertown Goon" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2c2c-4a8f-ce0f-120a" name="Bartertown Goon" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="e5c4-4d1e-1ca9-222c" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile"/>
       </infoLinks>
@@ -138,7 +154,7 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74e6-c04d-acb8-34f9" name="Bartertown Goon /w pistol" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="74e6-c04d-acb8-34f9" name="Bartertown Goon /w pistol" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="b6f9-66b4-ffe6-291f" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile"/>
         <infoLink id="80f0-f1a9-19fa-2165" name="Pipe Pistol" hidden="false" targetId="8fd2-fa79-6fae-dbf0" type="profile"/>
@@ -148,7 +164,7 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8230-a429-8194-9b12" name="Bartertown Goon /w tire iron" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8230-a429-8194-9b12" name="Bartertown Goon /w Torch" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7ad4-c74b-157f-8ddb" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile">
           <modifiers>
@@ -161,7 +177,7 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a278-55a8-f16b-293e" name="Bartertown Goon /w fuel drum" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a278-55a8-f16b-293e" name="Bartertown Goon /w fuel drum" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="b53d-a6ec-b9d4-055e" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile">
           <modifiers>
@@ -175,7 +191,7 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9fce-eba9-117d-fa8c" name="Bartertown Goons" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9fce-eba9-117d-fa8c" name="Bartertown Goons" hidden="false" collective="false" import="true" type="unit">
       <entryLinks>
         <entryLink id="abbe-7118-b291-6626" name="Goon Selection" hidden="false" collective="false" import="true" targetId="84d9-3700-b319-16c9" type="selectionEntryGroup"/>
       </entryLinks>
@@ -184,9 +200,153 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="24be-8aa1-79d2-99e6" name="Subboss HeWhoPissesFuel" hidden="false" collective="false" import="true" type="unit">
+      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition</comment>
+      <modifiers>
+        <modifier type="decrement" field="441f-f342-94bc-efcf" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40a4-8cab-96f3-cb17" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="441f-f342-94bc-efcf" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a064-2c7d-0315-84c9" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="441f-f342-94bc-efcf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d137-56bb-b9a0-95ba" name="Subboss HeWhoPissesFuel" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <characteristics>
+            <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">15</characteristic>
+            <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">5</characteristic>
+            <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">5</characteristic>
+            <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d931-228d-daf4-03ef" name="Stall the revolution" hidden="false">
+          <description>You can only have each subleader once per outpost. Subleaders are limited and can only be the number of leaders + 1.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="47ff-ee17-539b-0995" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e20-be3a-b681-71cf" name="Subboss Taserface" hidden="false" collective="false" import="true" type="unit">
+      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition</comment>
+      <modifiers>
+        <modifier type="increment" field="2f1d-e366-4a7f-5962" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a064-2c7d-0315-84c9" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="2f1d-e366-4a7f-5962" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40a4-8cab-96f3-cb17" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1d-e366-4a7f-5962" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2f2f-3b75-d3e3-5195" name="Subboss Taserface" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <characteristics>
+            <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">15</characteristic>
+            <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">5</characteristic>
+            <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">5</characteristic>
+            <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b4ee-8d7c-7eed-9fdf" name="Stall the revolution" hidden="false">
+          <description>You can only have each subleader once per outpost. Subleaders are limited and can only be the number of leaders + 1.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4c15-9ec9-a397-dce9" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8acf-7192-9930-82dc" name="Subboss Dieselgurgler" hidden="false" collective="false" import="true" type="unit">
+      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition</comment>
+      <modifiers>
+        <modifier type="decrement" field="a43b-478f-def1-2ab3" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40a4-8cab-96f3-cb17" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="a43b-478f-def1-2ab3" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a064-2c7d-0315-84c9" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a43b-478f-def1-2ab3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b986-520c-4a79-05f4" name="Subboss Dieselgurgler" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <characteristics>
+            <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">15</characteristic>
+            <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">5</characteristic>
+            <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">5</characteristic>
+            <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3453-312d-6504-8113" name="Stall the revolution" hidden="false">
+          <description>You can only have each subleader once per outpost. Subleaders are limited and can only be the number of leaders + 1.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b2c9-f1d2-7738-4b84" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="771e-c7a9-5686-4554" name="Mad Max" hidden="false" collective="false" import="true" type="unit">
+      <comment>This max is mad.</comment>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8250-4b96-676d-dd4e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1255-a9fe-3220-a434" name="Mad Max" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <characteristics>
+            <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">30</characteristic>
+            <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">20</characteristic>
+            <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">50</characteristic>
+            <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">20</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b12c-c8fb-1e2c-c964" name="New CategoryLink" hidden="false" targetId="a064-2c7d-0315-84c9" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="8.0"/>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="84d9-3700-b319-16c9" name="Goon Selection" hidden="false" collective="false" import="true" defaultSelectionEntryId="26d7-a5c1-47fb-f6f5">
+      <comment>SEG that limits selections internally based on existing internal selections</comment>
       <constraints>
         <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec35-cdcc-eab2-2804" type="min"/>
         <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56fd-1a20-ae62-7580" type="max"/>
@@ -198,7 +358,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee21-958f-961d-47ea" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="36e3-a3c8-0f18-107b" name="Bartertown Goon /w tire iron" hidden="false" collective="false" import="true" targetId="8230-a429-8194-9b12" type="selectionEntry">
+        <entryLink id="36e3-a3c8-0f18-107b" name="Bartertown Goon /w Torch" hidden="false" collective="false" import="true" targetId="8230-a429-8194-9b12" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="d883-fb41-b6f4-b7df" value="0.0">
               <conditions>

@@ -42,20 +42,46 @@
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="1f30-56d0-ac83-1212" name="Lead Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false">
+      <modifiers>
+        <modifier type="set" field="658d-ed15-6c44-cb72" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f92c-51d5-ff55-166c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="658d-ed15-6c44-cb72" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="658d-ed15-6c44-cb72" type="min"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="54f3-cd22-5b50-a6d5" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="2c8f-63d4-2b0c-01ad" name="Support Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false"/>
     <categoryEntry id="c735-947c-993c-e57d" name="Attack Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false">
+      <modifiers>
+        <modifier type="set" field="427d-5390-45fc-ea11" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f92c-51d5-ff55-166c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="427d-5390-45fc-ea11" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="427d-5390-45fc-ea11" type="min"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="10c7-1327-32a1-6bee" name="Game Options" publicationId="2ea4-57c2-c067-7215" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4922-b715-1460-89ee" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="a970-5bec-00e0-9f36" name="Goons" hidden="false"/>
+    <categoryEntry id="a064-2c7d-0315-84c9" name="Leader" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0220-46ce-6a6a-2aa5" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adf3-02e9-4cfb-9ded" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="40a4-8cab-96f3-cb17" name="Subleader" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ee-6b24-1106-d9dc" type="max"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -82,6 +108,36 @@
         <categoryLink id="e224-408f-6a89-f0f2" name="Attack Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false" targetId="c735-947c-993c-e57d" primary="false"/>
         <categoryLink id="5aff-4f5d-eb36-e563" name="Support Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false" targetId="2c8f-63d4-2b0c-01ad" primary="false"/>
         <categoryLink id="63ea-7954-9af1-b857" name="Lead Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false" targetId="1f30-56d0-ac83-1212" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="bc73-47a4-25c2-a944" name="Outpost" hidden="false">
+      <modifiers>
+        <modifier type="set" field="7eb5-9d92-604a-503f" value="100.0">
+          <conditions>
+            <condition field="selections" scope="10c7-1327-32a1-6bee" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d78-85fe-4de7-2099" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7eb5-9d92-604a-503f" value="200.0">
+          <conditions>
+            <condition field="selections" scope="10c7-1327-32a1-6bee" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31f-2b03-7d58-4df1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="forces" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="32b8-b7d2-c71f-5f90" type="max"/>
+        <constraint field="a66b-3b27-93dd-68ce" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="7eb5-9d92-604a-503f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2310-b302-bb5f-43a4" name="Lead Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false" targetId="1f30-56d0-ac83-1212" primary="false"/>
+        <categoryLink id="9a51-38c8-8348-c798" name="Support Vehicles" publicationId="2ea4-57c2-c067-7215" hidden="false" targetId="2c8f-63d4-2b0c-01ad" primary="false"/>
+        <categoryLink id="7be7-9177-80c9-2231" name="Game Options" publicationId="2ea4-57c2-c067-7215" hidden="false" targetId="10c7-1327-32a1-6bee" primary="false"/>
+        <categoryLink id="37f3-ae0e-28ef-ae56" name="Goons" hidden="false" targetId="a970-5bec-00e0-9f36" primary="false"/>
+        <categoryLink id="72ad-047d-ece2-f53e" name="Leader" hidden="false" targetId="a064-2c7d-0315-84c9" primary="false"/>
+        <categoryLink id="78ab-02f6-a6a7-8ecb" name="Subleader" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d167-cc14-2a75-dee4" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
