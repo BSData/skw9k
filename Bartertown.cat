@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="9c5a-8fa3-19b7-f4ed" name="Bartertown" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="bc3d-3e2a-b2b3-fef7" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="86ef-a1bb-1c14-6d79" name="Slavemaster" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
     <entryLink id="5212-e598-025c-206d" name="Aunty Entity" hidden="false" collective="false" import="true" targetId="57ab-17bc-19a3-9913" type="selectionEntry">
       <categoryLinks>
@@ -37,12 +40,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="ee77-7beb-6821-edb5" name="Mad Max" hidden="false" collective="false" import="true" targetId="771e-c7a9-5686-4554" type="selectionEntry"/>
+    <entryLink id="d328-7f9a-9255-741c" name="Bartertown Slaves" hidden="false" collective="false" import="true" targetId="59ae-be5b-ca1f-c59d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a164-e0bd-6a60-ea8c" name="New CategoryLink" hidden="false" targetId="a970-5bec-00e0-9f36" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="24cf-5fcd-239a-ba35" name="Bartertown Codex" publicationId="2ea4-57c2-c067-7215" page="56" hidden="false">
+      <comment>Direct Root rule for view on the Roster view</comment>
       <description>If a BARTERTOWN unit fells their Hold Firm Test, it is sent to Gulag.Remove the model from the game. No more than 32 models can be exiled this way during a single game.</description>
     </rule>
   </rules>
+  <infoLinks>
+    <infoLink id="2d4d-191f-3f39-47fe" name="The Game" hidden="false" targetId="59ec-a513-f7ee-2a8d" type="rule"/>
+  </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8b18-ad38-7a22-287b" name="Master" publicationId="2ea4-57c2-c067-7215" page="44" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
@@ -116,6 +128,7 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="57ab-17bc-19a3-9913" name="Aunty Entity" hidden="false" collective="false" import="true" type="unit">
+      <comment>Aunty Entity and Master Blaster are mutually exclusive</comment>
       <modifiers>
         <modifier type="set" field="e8eb-c3d3-7041-9d52" value="0.0">
           <conditions>
@@ -164,7 +177,7 @@
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8230-a429-8194-9b12" name="Bartertown Goon /w Torch" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8230-a429-8194-9b12" name="Bartertown Goon /w torch" publicationId="2ea4-57c2-c067-7215" page="48" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7ad4-c74b-157f-8ddb" name="Bartertown Goon" hidden="false" targetId="a02d-6c9c-9f9e-ba32" type="profile">
           <modifiers>
@@ -192,6 +205,7 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9fce-eba9-117d-fa8c" name="Bartertown Goons" hidden="false" collective="false" import="true" type="unit">
+      <comment>Goons check for different valid loadouts in selections</comment>
       <entryLinks>
         <entryLink id="abbe-7118-b291-6626" name="Goon Selection" hidden="false" collective="false" import="true" targetId="84d9-3700-b319-16c9" type="selectionEntryGroup"/>
       </entryLinks>
@@ -201,7 +215,7 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="24be-8aa1-79d2-99e6" name="Subboss HeWhoPissesFuel" hidden="false" collective="false" import="true" type="unit">
-      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition</comment>
+      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition. Increases stats if the only SUBLEADER in Roster.</comment>
       <modifiers>
         <modifier type="decrement" field="441f-f342-94bc-efcf" value="1.0">
           <repeats>
@@ -219,6 +233,13 @@
       </constraints>
       <profiles>
         <profile id="d137-56bb-b9a0-95ba" name="Subboss HeWhoPissesFuel" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="1744-8129-95a0-536e" value="15">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40a4-8cab-96f3-cb17" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">15</characteristic>
             <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">5</characteristic>
@@ -241,7 +262,7 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6e20-be3a-b681-71cf" name="Subboss Taserface" hidden="false" collective="false" import="true" type="unit">
-      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition</comment>
+      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition. Also modifies its profile based on a  SEG.</comment>
       <modifiers>
         <modifier type="increment" field="2f1d-e366-4a7f-5962" value="1.0">
           <repeats>
@@ -259,6 +280,13 @@
       </constraints>
       <profiles>
         <profile id="2f2f-3b75-d3e3-5195" name="Subboss Taserface" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="1744-8129-95a0-536e" value="5">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2049-6500-66df-d857" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">15</characteristic>
             <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">5</characteristic>
@@ -275,13 +303,16 @@
       <categoryLinks>
         <categoryLink id="4c15-9ec9-a397-dce9" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="8ff0-bf9c-26a7-f4ad" name="Slavemaster" hidden="false" collective="false" import="true" targetId="2049-6500-66df-d857" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8acf-7192-9930-82dc" name="Subboss Dieselgurgler" hidden="false" collective="false" import="true" type="unit">
-      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition</comment>
+      <comment>Subleader with only local profiles. Limited in number, can be increased by having LEADERS via a REPEAT condition. Increases Evasion stat if Bartertown Slaves are present in Force.</comment>
       <modifiers>
         <modifier type="decrement" field="a43b-478f-def1-2ab3" value="1.0">
           <repeats>
@@ -299,6 +330,13 @@
       </constraints>
       <profiles>
         <profile id="b986-520c-4a79-05f4" name="Subboss Dieselgurgler" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+          <modifiers>
+            <modifier type="increment" field="9aab-d556-7966-cc13" value="15">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="59ae-be5b-ca1f-c59d" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">15</characteristic>
             <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">5</characteristic>
@@ -315,6 +353,9 @@
       <categoryLinks>
         <categoryLink id="b2c9-f1d2-7738-4b84" name="New CategoryLink" hidden="false" targetId="40a4-8cab-96f3-cb17" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="9843-8623-bf60-dbcb" name="Slavemaster" hidden="false" collective="false" import="true" targetId="2049-6500-66df-d857" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
@@ -341,6 +382,66 @@
       <costs>
         <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="8.0"/>
         <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2049-6500-66df-d857" name="Slavemaster" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dcf-c24a-78ad-fedd" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="1.0"/>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59ae-be5b-ca1f-c59d" name="Bartertown Slaves" hidden="false" collective="false" import="true" type="unit">
+      <comment>Slaves have a collective equipment</comment>
+      <selectionEntries>
+        <selectionEntry id="1168-c135-9937-dc47" name="Bartertown Slave" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a9c-b369-1272-4d35" type="min"/>
+            <constraint field="selections" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8241-1fa8-c76c-96ca" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b72e-9335-cd9c-3ccc" name="Bartertown Slave" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
+              <characteristics>
+                <characteristic name="Attack Power" typeId="1744-8129-95a0-536e">1</characteristic>
+                <characteristic name="Evasion" typeId="9aab-d556-7966-cc13">1</characteristic>
+                <characteristic name="Driving Skill" typeId="8b10-f201-846f-ab9f">1</characteristic>
+                <characteristic name="Navigation Skill" typeId="3f4b-aa15-3364-134b">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="1938-8abf-62cc-5cda" name="Improvised Weapon" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e42-d704-05c3-457b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="364a-3214-2860-5494" name="Improvised Weapon" hidden="false" typeId="6cfe-fe74-1a3d-6d17" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Type" typeId="5fce-07c3-4ac4-725c">Melee</characteristic>
+                    <characteristic name="Damage" typeId="e9b6-5ffa-ead8-7da4">1</characteristic>
+                    <characteristic name="Attack Speed" typeId="b3d9-5892-fc1d-cd47">1</characteristic>
+                    <characteristic name="Parry" typeId="9972-d522-3bdb-4501">1</characteristic>
+                    <characteristic name="Range" typeId="b352-1258-db4f-2de1">1&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="1.0"/>
+                <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="1.0"/>
+            <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -378,6 +479,12 @@
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="59ec-a513-f7ee-2a8d" name="The Game" hidden="false">
+      <comment>Shared Rule for display on the Rosterview.</comment>
+      <description>You just lost the game. Be sure to tell everyone that they lost the game as well.</description>
+    </rule>
+  </sharedRules>
   <sharedProfiles>
     <profile id="c105-0fcb-fc9c-d143" name="Master" hidden="false" typeId="a6e8-411d-f765-546a" typeName="Character">
       <characteristics>
