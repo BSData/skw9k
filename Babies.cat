@@ -3,18 +3,63 @@
   <publications>
     <publication id="1ee7-1cb3-868f-a153" name="BabyBook 2022"/>
   </publications>
+  <selectionEntries>
+    <selectionEntry id="e39f-ff57-9b4d-0544" name="Youngligs Semi" publicationId="1ee7-1cb3-868f-a153" page="3" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e5eb-f204-6b01-e41a" name="New CategoryLink" hidden="false" targetId="2c8f-63d4-2b0c-01ad" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a2e5-4946-2f56-4d3c" name="Youngling" publicationId="1ee7-1cb3-868f-a153" page="3" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17aa-919d-1a98-faa7" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2756-e247-7f34-092e" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0c12-7c55-3bc8-9511" name="Hand weapon" publicationId="1ee7-1cb3-868f-a153" hidden="false" collective="true" import="true" defaultSelectionEntryId="e9c0-14b6-c421-b4e2">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4d6-a7db-c26b-baf6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d58d-12b8-2e81-81db" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="e9c0-14b6-c421-b4e2" name="Bashing Bat" hidden="false" collective="false" import="true" type="upgrade"/>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="51b4-7f4d-aeec-34ef" name="Tire Grenade" hidden="false" collective="false" import="true" targetId="a1d7-1c41-e8e9-bb61" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="209b-ff54-3ea6-3651" name="BabyBuggy" publicationId="1ee7-1cb3-868f-a153" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="209b-ff54-3ea6-3651" name="BabyBuggy" publicationId="1ee7-1cb3-868f-a153" page="1" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="3ee6-bce5-3dd3-f479" name="New CategoryLink" hidden="false" targetId="2c8f-63d4-2b0c-01ad" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="7d6e-e84a-1220-8e97" name="Wheeled Bassinet" publicationId="1ee7-1cb3-868f-a153" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7d6e-e84a-1220-8e97" name="Wheeled Bassinet" publicationId="1ee7-1cb3-868f-a153" page="2" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0592-7b8a-3708-a4d4" name="New CategoryLink" hidden="false" targetId="c735-947c-993c-e57d" primary="true"/>
         <categoryLink id="aa98-84fe-f980-8b75" name="Support Vehicles" hidden="false" targetId="2c8f-63d4-2b0c-01ad" primary="false"/>
         <categoryLink id="f4d2-5e18-ee94-4954" name="Lead Vehicles" hidden="false" targetId="1f30-56d0-ac83-1212" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="Fuel" typeId="f129-c6bb-02e0-923e" value="0.0"/>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a1d7-1c41-e8e9-bb61" name="Tire Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Points" typeId="a66b-3b27-93dd-68ce" value="1.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
